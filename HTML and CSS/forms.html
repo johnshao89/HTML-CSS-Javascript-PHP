@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Forms</title>        
+    </head>
+    <body>
+        <form action="http://www.example.com/subscribe.php" method="GET">
+            <p>This is where the form controls will appear</p>
+
+        </form>
+        <form action="http://www.example.com/login.php" method="GET">
+        <p>Username:
+            <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+        </form>
+        <form action="http://www.example.com/login.php" method="GET">
+        <p>Username:<input type="text" name="username" size="15" maxlength="30" /></p>
+        <p>Password:<input type="password" name="password" size="15" maxlength="30" /></p>
+    </form>
+    <form action="http://www.example.com/profile.php" method="GET">
+    <p>Please select your favourite genre:
+        <br />
+        <input type="radio" name="genre" value="Rock"/>Rock
+        <input type="radio" name="genre" value="Pop" checked="checked">Pop
+        <input type="radio" name="genre" value="jazz">Jazz
+    </p>
+    </form>
+    <form action="http://www.example.com/profile.php" method="GET">
+    <p>What device do you listen to musci on?
+        <br>
+        <select name="device">
+            <option value="iPod" checked=checked>iPod</option>
+            <option value="Radio"> Radio</option>
+            <option value="Computer">Computer</option>
+        </select>
+    </p>
+    </form>
+    <form action="http://www.examples.com/profile.php" method="GET">
+    <p>Do you play any of the following instrument? (You can select more than one option by holding down control on a PC
+        or a command key on a Mac while selecting different options.)
+        <br>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="Guitar">Guitar</option>
+            <option value="Drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="Bass" selected="selected">Bass</option>
+        </select>
+    </p>
+    </form>
+    <form action="http://www.example.com/upload.php" method="POST">
+    <input type="file" name="user-song"><br>
+    <input type="submit" value="submit">   
+    </form>
+    <form action="http://www.example.com/add.php" method="GET">
+    <button><img src="" alt="add" width="10" height="10">Add image</button>  
+    </form>
+    <label>Age: <input type="text" size="10" maxlength="30"></label>
+    <br>
+    <p>Genre: 
+        <input type="radio" id="female" name="genre" value="f">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="genre" value="m">
+        <label for="female">Male</label> 
+    </p>
+    <form action="https://www.example.com/bookings/" method="POST">
+        <label for="username">Departure Date:</label>
+        <input type="date" name="departure" value="2019-11-03">
+        <input type="submit" value="Submit">
+    
+    
+    </form>
+    </body>
+</html>
